@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="src/MU.jpg" width="100%">
+    <header>
+        <nav>
+            <a href="criar.html">Agendar Viagem</a>
+            <a href="AtulizaDeleta.html">Editar Viagem</a>
+            <img src="src/1564506_close_exit_logout_power_icon.svg" title="Sair" width="25px" onclick="sairVoo()">
+        </nav>
+    </header>
+    <section>
+
+
+   <article class="pesquisa">
+       <input type="number" name="busca" id="busca" placeholder="Numero da Viagem...">
+       <input type="submit" value="Busca" name="busca" class="btn" onclick="chamaVoos()">
+       <input type="submit" value="Limpar" name="limpar" class="btn" onclick="refresh()">
+       <div class="pesqVoos">
+           <ul id="voosList">
+            <h1>Pesquise...</h1>
+   
+           </ul>
+       </div>
+   </article>
+
+   <section class="todosVos">
+       <div class="listVoos">
+            <h1>Suas Viagens</h1>
+    
+            <ul id="usersList">
+    
+            </ul>
+        </div>
+
+    </section>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="front.js"></script>
+    <script src="ocultar-mostrar.js"></script>
+</body>
+
+</html>

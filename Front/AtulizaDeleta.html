@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <img src="src/onibus.jpg" width="100%">
+    <header>
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="criar.html">Agendar Viagem</a>
+            <img src="src/1564506_close_exit_logout_power_icon.svg" title="Sair" width="25px" onclick="sairVoo()">
+        </nav>
+    </header>
+    <section>
+        
+        <form>
+            <h1>Deletar</h1>
+            <br><br>
+            <label for="dellVoo">ID:</label><br>
+            <input type="number" id="dellVoo" name="dellVoo" autofocus><br><br>
+            <input type="submit" value="Deletar" id="btn" onclick="deletaVoo()">
+        </form>
+       <form>
+            <h1>Atualizar</h1>
+            <br>
+            <label for="newVoo">ID:</label><br>
+            <input type="number" id="newVoo" name="newVoo" autofocus><br><br>
+
+            <label for="newOrigem">Origem:</label><br>
+            <input type="text" id="newOrigem" name="newOrigem" required><br><br>
+
+            <label for="newDestino">Destino:</label><br>
+            <input type="text" id="newDestino" name="newDestino" required><br><br>
+
+            <input type="submit" value="Atualizar" id="btn" onclick="alterarVoo()">
+        </form>
+    </section>
+
+    <h1>Minhas Viagens</h1>
+    <ul id="usersList">
+
+    </ul>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="front.js"></script>
+</body>
+
+</html>
