@@ -36,6 +36,7 @@ Criar uma aplicação em express que tenha tres edpoints.
 Um voo deve ter: id, origem, destino
 
 
+![Viagens](https://user-images.githubusercontent.com/72577273/203615431-6aba2830-4128-4fad-95e8-9e081213d2a7.png)
 
 
 
